@@ -2,8 +2,8 @@ var AWS     = require("aws-sdk");
 var dynamo  = require('dynamodb');
 const Joi   = require('joi');
 /**********************************************************/
-dynamo.AWS.config.update({accessKeyId: 'AKIAYV5VQ7QDKKWSCORK', secretAccessKey: '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', region: "ap-south-1",endpoint: "https://dynamodb.ap-south-1.amazonaws.com"});
-//dynamo.AWS.config.update({accessKeyId: 'AKIAYV5VQ7QDPPXOQYAS', secretAccessKey: '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', region: "ap-south-1",endpoint: "http://localhost:8000"});
+dynamo.AWS.config.update({accessKeyId: '', secretAccessKey: '', region: "ap-south-1",endpoint: "https://dynamodb.ap-south-1.amazonaws.com"});
+//dynamo.AWS.config.update({accessKeyId: '', secretAccessKey: '', region: "ap-south-1",endpoint: "http://localhost:8000"});
 //var dynamodb = new AWS.DynamoDB();
 
 var Forums = dynamo.define('forum', {
